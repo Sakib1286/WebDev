@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Transport Services</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1976D2, #1565C0);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .hero {
+      background: url('https://i.ibb.co/f0RZyxr/transport-banner.jpg') center/cover no-repeat;
+      height: 300px;
+      position: relative;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-content h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .hero-content p {
+      font-size: 18px;
+    }
+
+    .section {
+      padding: 60px 50px;
+      text-align: center;
+      background: #fff;
+    }
+    .section h2 {
+      font-size: 32px;
+      color: #1565C0;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 30px 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: left;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+    .card h3 {
+      font-size: 22px;
+      color: #1976D2;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .card button {
+      background: #1565C0;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .card button:hover {
+      background: #0d47a1;
+    }
+
+    .info {
+      background: linear-gradient(90deg, #1565C0, #1E88E5);
+      color: white;
+      text-align: center;
+      padding: 50px 30px;
+    }
+    .info h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .info .grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .info .card {
+      background: white;
+      color: #1565C0;
+      text-align: center;
+      border-radius: 15px;
+      font-weight: 500;
+    }
+    .info .card .icon {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #0D47A1;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer h3 {
+      color: white;
+    }
+    footer a {
+      color: #ffeb3b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🚦 Smart Transport Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Utilities</a>
+      <a href="#">Healthcare</a>
+      <a href="#">Map</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Smarter Travel for a Smarter City</h2>
+      <p>Find routes, rent bikes, book rides, and travel seamlessly.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Transport Options</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🚌 Bus Schedules</h3>
+        <p>Find real-time bus routes, timings, and fares for your daily commute.</p>
+        <button>View Buses</button>
+      </div>
+
+      <div class="card">
+        <h3>🚇 Metro Routes</h3>
+        <p>Check live metro updates, route maps, and train arrival times instantly.</p>
+        <button>View Metro</button>
+      </div>
+
+      <div class="card">
+        <h3>🚗 Ride Sharing</h3>
+        <p>Book car, CNG, or bike rides nearby with secure digital payment options.</p>
+        <button>Book Ride</button>
+      </div>
+
+      <div class="card">
+        <h3>🚴 Bike Rentals</h3>
+        <p>Locate smart bike stations and rent eco-friendly bikes for short trips.</p>
+        <button>Rent Bike</button>
+      </div>
+
+      <div class="card">
+        <h3>🚆 Railway Services</h3>
+        <p>Access train schedules, track train locations, and buy digital tickets.</p>
+        <button>View Trains</button>
+      </div>
+
+      <div class="card">
+        <h3>🎫 Smart Tickets</h3>
+        <p>Purchase, store, and validate tickets for buses, metros, and trains in one tap.</p>
+        <button>Buy Ticket</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>Travel Updates & Info</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🕓</div>
+        <h3>Live Delay Updates</h3>
+        <p>Stay informed about traffic and transport delays in real-time.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📍</div>
+        <h3>Nearest Stops</h3>
+        <p>Find the nearest bus, metro, or bike rental points from your location.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💳</div>
+        <h3>Smart Payment</h3>
+        <p>Pay using cards, mobile wallets, or QR codes across all transport modes.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Eco-Friendly Rides</h3>
+        <p>Promoting electric buses, shared bikes, and reduced carbon travel.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>© 2025 Smart City Portal — Transport Division</h3>
+    <p>Travel Smart. Travel Green. | <a href="#">Contact Us</a></p>
+  </footer>
+</body>
+</html>
