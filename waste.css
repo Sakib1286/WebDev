@@ -82,3 +82,32 @@ nav a:hover{
     font-size: 16px;
     color: #555;
 }
+/* Services Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: left;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card h3 { font-size: 20px; margin: 10px 0; color: #2E7D32; }
+.card p { font-size: 15px; color: #555; }
+.icon { font-size: 40px; margin-bottom: 10px; }
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  background: #2E7D32;
+  color: white;
+}
