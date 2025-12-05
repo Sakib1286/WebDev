@@ -64,10 +64,11 @@ nav a:hover {
   background: #fff;
 }
 .section h2 {
-  font-size: 32px;
-  color: #1565C0;
-  margin-bottom: 40px;
+    font-size: 32px;
+    color: #1565C0;
+    margin-bottom: 60px;
 }
+
 
 .grid {
   display: grid;
