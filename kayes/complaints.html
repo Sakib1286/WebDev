@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complaints - Smart City Portal</title>
+  <link rel="stylesheet" href="complaints.css">
+</head>
+<body>
+    <header>
+        <h1>Complaints</h1>
+        <nav><a href="ui.html">🏠 Home</a></nav>
+    </header>
+
+    <section class="container">
+        <h2>📝 File a Complaint</h2>
+        <form>
+            <input type="text" placeholder="Your Full Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <select required>
+                <option value="" disabled selected>-- Select Service --</option>
+                <option>🚍 Transport</option>
+                <option>🏥 Healthcare</option>
+                <option>💧 Utilities</option>
+                <option>🚮 Waste Management</option>
+                <option>Other</option>
+            </select>
+            <textarea placeholder="Describe your issue..." rows="5" required></textarea>
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </section>
+
+<footer>
+  <p>© 2025 Smart City Portal | Designed by Opu, Sakib & Kayes</p>
+</footer>
+</body>
+</html>
