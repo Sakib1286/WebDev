@@ -76,4 +76,8 @@ document.getElementById("submitBtn").addEventListener("click", function (e) {
   const isServiceValid = validateService();
   const isDescValid = validateDescription();
 
+   if (isNameValid && isEmailValid && isServiceValid && isDescValid) {
+      document.querySelector("form").submit();
+  }
+
 });

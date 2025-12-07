@@ -13,23 +13,24 @@
 
     <section class="container">
         <h2>📝 File a Complaint</h2>
-        <form>
-            <input type="text" id="nameInput" placeholder="Your Full Name">
+        
+        <form method="POST" action="submit.php">
+            <input type="text" name="name" id="nameInput" placeholder="Your Full Name">
             <span class="nameError" id="nameError"></span>
 
-            <input type="email" id="emailInput" placeholder="Your Email">
+            <input type="email" name="email" id="emailInput" placeholder="Your Email">
             <span class="emailError" id="emailError"></span>
 
-            <select id="service">
-                <option value="" disabled selected>-- Select Service --</option>
-                <option>🚍 Transport</option>
-                <option>🏥 Healthcare</option>
-                <option>💧 Utilities</option>
-                <option>🚮 Waste Management</option>
-                <option>Other</option>
+            <select id="service" name="service">
+                <option value="select service" disabled selected>-- Select Service --</option>
+                <option value="Transport">🚍 Transport</option>
+                <option value="Healthcare">🏥 Healthcare</option>
+                <option value="Utilities">💧 Utilities</option>
+                <option value="waste Management">🚮 Waste Management</option>
+                <option value="option">Other</option>
             </select>
             <span id="serviceError"></span>
-            <textarea id="description" placeholder="Describe your issue..." rows="5"></textarea>
+            <textarea id="description" name="description" placeholder="Describe your issue..." rows="5"></textarea>
             <span id="descError"></span>
             <button type="submit" id="submitBtn">Submit Complaint</button>
         </form>
