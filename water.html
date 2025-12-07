@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Water Supply - Smart City Portal</title>
+  <link rel="stylesheet" href="water.css">
+</head>
+
+<body>
+
+<header>
+  <h1>💧 Water Supply</h1>
+  <nav><a href="utilities.html">⬅ Back to Utilities</a></nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="icon">💧</div>
+  <h2>Smart Water Management</h2>
+  <p>Check water availability, supply updates, and raise issues instantly.</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="container">
+
+  <!-- INFO CARDS -->
+  <div class="grid">
+    <div class="info-card">
+      <h3>📦 Daily Supply</h3>
+      <p>Average daily water supply: <b>120 Liters per person</b></p>
+    </div>
+
+    <div class="info-card">
+      <h3>📍 Your Zone</h3>
+      <p>Current Pressure Level: <b>Normal</b></p>
+    </div>
+
+    <div class="info-card">
+      <h3>⚠ Alerts</h3>
+      <p>No active water outage alerts in your area.</p>
+    </div>
+  </div>
+
+  <!-- SUPPLY STATUS TABLE -->
+  <div class="card">
+    <h2>Today's Water Supply Status</h2>
+    <table>
+      <tr>
+        <th>Area</th>
+        <th>Supply Time</th>
+        <th>Pressure</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>North Zone</td>
+        <td>7 AM - 11 AM</td>
+        <td>High</td>
+        <td>✔ Normal</td>
+      </tr>
+      <tr>
+        <td>South Zone</td>
+        <td>6 AM - 10 AM</td>
+        <td>Medium</td>
+        <td>✔ Normal</td>
+      </tr>
+      <tr>
+        <td>East Zone</td>
+        <td>8 AM - 12 PM</td>
+        <td>Low</td>
+        <td>⚠ Low Pressure</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ISSUE REPORT FORM -->
+  <div class="card">
+    <h2>Report a Water Issue</h2>
+    <form>
+      <input type="text" placeholder="Your Address" class="input-field">
+      <select class="input-field">
+        <option>Select Issue Type</option>
+        <option>No Water Supply</option>
+        <option>Low Pressure</option>
+        <option>Pipeline Leakage</option>
+        <option>Contaminated Water</option>
+      </select>
+      <textarea class="input-field" rows="3" placeholder="Describe your issue..."></textarea>
+      <button class="btn">Submit Report</button>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Smart City Portal | Designed by Opu, Sakib & Kayes
+</footer>
+
+</body>
+</html>
