@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef3ff;
+}
+
+/* Header */
+header {
+  background: #3949ab;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+  border-bottom: 1px solid #d0d7ff;
+}
+
+.hero .icon {
+  font-size: 60px;
+}
+
+.hero h2 {
+  color: #283593;
+  margin-bottom: 5px;
+}
+
+.hero p {
+  color: #555;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Dashboard Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.12);
+}
+
+.info-card h3 {
+  margin-top: 0;
+  color: #283593;
+}
+
+.value {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #1a237e;
+}
+
+.good {
+  color: #2e7d32;
+}
+
+.sub {
+  color: #666;
+}
+
+/* Main Cards */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 25px;
+  box-shadow: 0 3px 9px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1a237e;
+}
+
+/* Chart Placeholder */
+.chart-placeholder {
+  background: #e2e7ff;
+  height: 220px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 220px;
+  color: #3949ab;
+  font-size: 20px;
+}
+
+/* Alerts */
+.alerts {
+  list-style: none;
+  padding: 0;
+}
+
+.alerts li {
+  padding: 12px;
+  background: #f2f4ff;
+  margin-bottom: 10px;
+  border-left: 5px solid #3949ab;
+  border-radius: 6px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #c5cae9;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #5c6bc0;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a237e;
+  color: white;
+  margin-top: 40px;
+}

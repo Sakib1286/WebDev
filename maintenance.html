@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maintenance Services - Smart City Portal</title>
+  <link rel="stylesheet" href="maintenance.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🛠️ Maintenance Services</h1>
+  <nav><a href="utilities.html">⬅ Back to Utilities</a></nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="icon">🛠️</div>
+  <h2>Smart Maintenance Dashboard</h2>
+  <p>Request maintenance service, track technician arrival & view service history.</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="container">
+
+  <!-- INFO GRID -->
+  <div class="grid">
+    <div class="info-card">
+      <h3>🚧 Active Requests</h3>
+      <p class="value">03</p>
+      <p class="sub">Currently under processing</p>
+    </div>
+
+    <div class="info-card">
+      <h3>⏳ Average Response</h3>
+      <p class="value">25 min</p>
+      <p class="sub">Technician arrival time</p>
+    </div>
+
+    <div class="info-card">
+      <h3>📅 Completed This Month</h3>
+      <p class="value">124</p>
+      <p class="sub">Services successfully resolved</p>
+    </div>
+  </div>
+
+  <!-- TECHNICIAN STATUS -->
+  <div class="card">
+    <h2>Technician Status</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Specialty</th>
+        <th>Status</th>
+        <th>Location</th>
+      </tr>
+      <tr>
+        <td>Rohim Mia</td>
+        <td>Water & Pipeline</td>
+        <td>🟢 Available</td>
+        <td>North Zone</td>
+      </tr>
+      <tr>
+        <td>Karim Hossain</td>
+        <td>Gas & Leakage</td>
+        <td>🔧 On Duty</td>
+        <td>South Zone</td>
+      </tr>
+      <tr>
+        <td>Sabbir Ahmed</td>
+        <td>Electricity</td>
+        <td>🟡 Busy</td>
+        <td>West Zone</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- SERVICE HISTORY -->
+  <div class="card">
+    <h2>Past Service History</h2>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Issue</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>12 Jan 2025</td>
+        <td>Pipeline Leakage</td>
+        <td>✔ Completed</td>
+      </tr>
+      <tr>
+        <td>10 Jan 2025</td>
+        <td>Electricity Fluctuation</td>
+        <td>✔ Completed</td>
+      </tr>
+      <tr>
+        <td>07 Jan 2025</td>
+        <td>Gas Pressure Drop</td>
+        <td>✔ Completed</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ISSUE REPORT FORM -->
+  <div class="card">
+    <h2>Report a Maintenance Issue</h2>
+
+    <form>
+      <input type="text" placeholder="Your Address" class="input-field">
+
+      <select class="input-field">
+        <option>Select Issue Type</option>
+        <option>Electricity Problem</option>
+        <option>Water Leakage</option>
+        <option>Gas Issue</option>
+        <option>Meter Not Working</option>
+        <option>Other</option>
+      </select>
+
+      <textarea rows="3" class="input-field" placeholder="Describe your issue..."></textarea>
+
+      <button class="btn">Submit Request</button>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Smart City Portal | Designed by Opu, Sakib & Kayes
+</footer>
+
+</body>
+</html>

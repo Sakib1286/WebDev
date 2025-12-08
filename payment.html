@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Payment - Smart City Portal</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+
+<header>
+  <h1>💳 Online Payment</h1>
+  <nav><a href="utilities.html">⬅ Back to Utilities</a></nav>
+</header>
+
+<section class="container">
+
+  <div class="payment-wrapper">
+
+    <!-- LEFT SIDE INFO -->
+    <div class="payment-info">
+      <h2>Complete Your Payment</h2>
+      <p>Pay securely using card, mobile banking or net banking.</p>
+
+      <img src="https://i.postimg.cc/FsLT3V6Z/secure.png" class="secure-img" alt="Secure Payment">
+      <p class="secure-text">🔒 100% Secure & Encrypted</p>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="payment-form">
+      <form>
+
+        <label>Service</label>
+        <select>
+          <option>Electricity</option>
+          <option>Water</option>
+          <option>Gas</option>
+        </select>
+
+        <label>Customer ID</label>
+        <input type="text" placeholder="Enter your customer ID">
+
+        <label>Amount</label>
+        <input type="number" placeholder="Enter amount">
+
+        <label>Payment Method</label>
+        <select id="paymentMethod">
+          <option value="card">Credit/Debit Card</option>
+          <option value="mobile">Mobile Banking</option>
+          <option value="net">Net Banking</option>
+        </select>
+
+        <!-- MOBILE BANKING OPTIONS -->
+        <div class="mobile-options" id="mobileOptions">
+          <label>Select Mobile Banking</label>
+
+          <div class="logo-row">
+            <label class="logo-card">
+              <input type="radio" name="mb" value="bkash">
+              <img src="https://i.postimg.cc/XYq08sM8/bkash.png" alt="Bkash">
+            </label>
+
+            <label class="logo-card">
+              <input type="radio" name="mb" value="nagad">
+              <img src="https://i.postimg.cc/Yq8xKkCK/nagad.png" alt="Nagad">
+            </label>
+
+            <label class="logo-card">
+              <input type="radio" name="mb" value="rocket">
+              <img src="https://i.postimg.cc/Wb0V3cgG/rocket.png" alt="Rocket">
+            </label>
+          </div>
+        </div>
+
+        <button class="btn">Pay Now</button>
+
+      </form>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>© 2025 Smart City Portal | Designed by Opu, Sakib & Kayes</footer>
+
+<script>
+// SHOW OR HIDE MOBILE BANKING OPTIONS
+const method = document.getElementById("paymentMethod");
+const mobileBox = document.getElementById("mobileOptions");
+
+method.addEventListener("change", () => {
+  mobileBox.style.display = method.value === "mobile" ? "block" : "none";
+});
+</script>
+
+</body>
+</html>

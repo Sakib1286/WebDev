@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gas Services - Smart City Portal</title>
+  <link rel="stylesheet" href="gas.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🔥 Gas Services</h1>
+  <nav><a href="utilities.html">⬅ Back to Utilities</a></nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="icon">🔥</div>
+  <h2>Smart Gas Management</h2>
+  <p>Pay bills, report leaks, and check service updates instantly.</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="container">
+
+  <!-- INFO CARDS -->
+  <div class="grid">
+    <div class="info-card">
+      <h3>📦 Monthly Usage</h3>
+      <p>Average Gas Consumption: <b>19 m³</b></p>
+    </div>
+
+    <div class="info-card">
+      <h3>📍 Your Zone</h3>
+      <p>Pipeline Pressure Level: <b>Stable</b></p>
+    </div>
+
+    <div class="info-card">
+      <h3>⚠ Alerts</h3>
+      <p>No active gas leakage alerts in your area.</p>
+    </div>
+  </div>
+
+  <!-- SERVICE STATUS TABLE -->
+  <div class="card">
+    <h2>Today's Gas Supply Status</h2>
+    <table>
+      <tr>
+        <th>Area</th>
+        <th>Supply Time</th>
+        <th>Pressure</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>North Zone</td>
+        <td>24 Hours</td>
+        <td>High</td>
+        <td>✔ Normal</td>
+      </tr>
+      <tr>
+        <td>South Zone</td>
+        <td>24 Hours</td>
+        <td>Medium</td>
+        <td>✔ Normal</td>
+      </tr>
+      <tr>
+        <td>East Zone</td>
+        <td>24 Hours</td>
+        <td>Low</td>
+        <td>⚠ Low Pressure</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- REPORT GAS ISSUE -->
+  <div class="card">
+    <h2>Report a Gas Issue</h2>
+
+    <form>
+      <input type="text" placeholder="Your Address" class="input-field">
+
+      <select class="input-field">
+        <option>Select Issue Type</option>
+        <option>Gas Leakage</option>
+        <option>Low Gas Pressure</option>
+        <option>No Gas Supply</option>
+        <option>Meter Not Working</option>
+      </select>
+
+      <textarea class="input-field" rows="3" placeholder="Describe your issue..."></textarea>
+
+      <button class="btn">Submit Report</button>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Smart City Portal | Designed by Opu, Sakib & Kayes
+</footer>
+
+</body>
+</html>

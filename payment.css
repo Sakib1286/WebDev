@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f5ff;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #5e35b1, #311b92);
+  padding: 25px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header nav a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* WRAPPER */
+.payment-wrapper {
+  display: flex;
+  gap: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* LEFT INFO */
+.payment-info {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.payment-info h2 {
+  margin-top: 0;
+  color: #4527a0;
+}
+
+.secure-img {
+  width: 120px;
+  margin-top: 20px;
+}
+
+.secure-text {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin-top: 10px;
+}
+
+/* FORM */
+.payment-form {
+  flex: 1.2;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #bfbfbf;
+  font-size: 15px;
+}
+
+/* MOBILE BANKING OPTIONS */
+.mobile-options {
+  display: none;
+  margin-top: 10px;
+  animation: fadeIn 0.4s ease;
+}
+
+.logo-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.logo-card {
+  width: 90px;
+  height: 60px;
+  padding: 8px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo-card:hover {
+  border-color: #673ab7;
+}
+
+.logo-card img {
+  width: 70px;
+}
+
+/* BUTTON */
+.btn {
+  background: #5e35b1;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #4527a0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #311b92;
+  color: white;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media(max-width: 780px) {
+  .payment-wrapper {
+    flex-direction: column;
+  }
+
+  .payment-info {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+  }
+}
