@@ -46,11 +46,14 @@
   <div class="card">
     <h2>Report an Outage</h2>
 
-    <form>
-      <input type="text" placeholder="Your Address" class="input-field">
-      <textarea rows="3" placeholder="Describe the issue" class="input-field"></textarea>
+    <!-- POST METHOD IMPLEMENTED -->
+    <form action="service.php" method="POST">
 
-      <button class="btn">Submit Report</button>
+      <input type="text" name="address" placeholder="Your Address" class="input-field" required>
+
+      <textarea rows="3" name="description" placeholder="Describe the issue" class="input-field" required></textarea>
+
+      <button type="submit" class="btn">Submit Report</button>
     </form>
   </div>
 
